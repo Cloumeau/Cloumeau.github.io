@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Loumeau</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Christopher<br>Loumeau's<br>Portfolio</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#Profile" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Profile</a> 
+    <a href="#Skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skills and Hobbies</a> 
+    <a href="#Projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
+    <a href="#Past Work Experience" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Past Work Experience</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Christopher Loumeau</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="Profile">
+    <h1 class="w3-jumbo"><b>Christopher Loumeau</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Profile</b></h1>
+    <hr style="width:50px;border:5px solid rgb(0, 0, 22)" class="w3-round">
+    <img src="chrislou.jpg" alt="Christopher Loumeau">
+    <p> <b>
+        My name is Christopher Loumeau. I am a senior at Villanova University majoring in Computer Science. I am pursuing a 
+        career in Software Engineering. 
+    </b>
+    </p>
+    <p> <b>
+        I went to Chaminade High School and grew up in Floral Park, New York. 
+    </b>
+    </p>
+    <p> <a href="https://www.linkedin.com/in/christopher-loumeau-7561a5151/">LinkedIn Account</a> <br>
+        <a href="https://github.com/Cloumeau">Github Account</a>
+    </p>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="w3-container" id="Skills" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Skills and Hobbies</b></h1>
+    <hr style="width:50px;border:5px solid rgb(0, 0, 22)" class="w3-round">
+    <P> I have experience in Java, Python, JavaScript, HTML, R, C++, SQL, NoSQL, CSS, PHP, Linux, Agile, Powershell, Groovy, Jenkins, and Git.
+    </P>
+    <img src="xampp/java.png" alt="java">
+    <img src="xampp/jenkins.png" width="200" height="200"  alt="jenkins">
+    <img src="xampp/SQL.png" width="200" height="180"alt="SQL">
+    <img src="xampp/html.png" width="200" height="180" alt="html">
+    <p> In my free time, I am involved in The Villanova Google Developer Student Club, Villanova Running Club, Villanova Special Olympics, Pi Kappa Phi Fraternity, Kaplan Test Prep Student Ambassador and Camp Anchor.
+    </p>
+    <img src="pi kapp.jpg" width="200" height="180" alt="pi kapp">
+    <img src="xampp/anchor.png"  width="240" height="200" alt="anchor">
+    <img src="xampp/kaplan.png"  width="240" height="180" alt="kaplan">
+    <img src="xampp/google.png"  width="240" height="200" alt="anchor">
+  </div>
+  
+  <!-- Projects -->
+  <div class="w3-container" id="Projects" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Projects</b></h1>
+    <hr style="width:50px;border:5px solid rgb(0, 0, 22)" class="w3-round">
+    <p><b>Web Development Project</b></p>
+    <p>Developed a web application with HTML, CSS, PHP, and JavaScript that informs students about rape culture at Villanova University.
+    </p>
+    <img src="xampp/vs.png" width="180" height="160" alt="visual studio code">
+    <p><b>IOS Application Development Project</b></p>
+    <p>Constructed a native IOS app to calculate a user’s BAC by utilizing Swift and Xcode in an Agile environment.
+    </p>
+    <img src="xampp/xcode.png" width="200" height="180" alt="xcode">
+    <p><b>Android Application Development Project</b></p>
+    <p>Utilized Java in Android Studio to develop a mobile application that generates random motivational texts with an API.
+    </p>
+    <img src="xampp/ad.png"width="250" height="160" alt="android studio">
+  </div>
+  <!-- Past Work Experience / Pricing Tables -->
+  <div class="w3-container" id="Past Work Experience" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Past Work Experience</b></h1>
+    <hr style="width:50px;border:5px solid rgb(0, 0, 22)" class="w3-round">
+    <p><b>Unisys</b></p>
+    <p><b>Software Engineering Intern</b></p>
+    <p>Developed automated testing scripts and Jenkins pipelines for Unisys’s network security segmentation software.
+    </p>
+    <p>Worked in an Agile Scrum environment that held three-week sprints and daily standups utilizing JIRA.
+    </p>
+    <p>Collaborated with other interns through pair programming.
+    </p>
+    <p><b>FamilyHood LLC</b></p>
+    <p><b>UX Intern</b></p>
+    <p>Collaborated with software developers through pair programming to optimize UI.
+    </p>
+    <p>Supported UI testing and managed developer feedback for the IOS app Bkindly.
+    </p>
+    <p>Coordinated social media and established partnerships for Familyhood LLC.
+    </p>
+    <p><b>Chaminade Advancement Office</b></p>
+    <p><b>Office Intern</b></p>
+    <p>Managed fundraising events to promote the construction of a 23 million-dollar S.T.E.M. center.
+    </p>
+    <p>Assisted in organizing the 2018 Chaminade Golf and Tennis Open, raising over $500,000 in net profit.
+    </p>
+    <p>Analyzed financial data pertaining to the Endowment Fund and Alumni Association.
+    </p>
+    <p><b>Villanova Parking Office</b></p>
+    <p><b>Office Intern</b></p>
+    <p>Operated T2 Flex and Fleet Services Financial systems. 
+    </p>
+    <p>Directed the customer service branch of the parking office.
+    </p>
+    <p>Managed Student and Faculty Vehicle Rentals.
+    </p>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact (WIP)</b></h1>
+    <hr style="width:50px;border:5px solid rgb(0, 0, 22)" class="w3-round">
+    <p>Feel free to contact me below with any questions.</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
